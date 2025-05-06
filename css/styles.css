@@ -442,44 +442,61 @@ input[type="checkbox"] {
   padding-bottom: 80px;
 }
 
-.bullet-list {
+.stepper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px 40px;
-  box-sizing: border-box;
-  max-width: 900px;
-  margin: 0 auto;
+  position: relative;
+  margin: 40px;
+  padding: 20px 0;
 }
 
-.bullet-item {
+.stepper::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 12%;
+  right: 12%;
+  height: 2px;
+  background-color: #e5e7eb;
+  z-index: 0;
+}
+
+.step {
+  text-align: center;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.dot-wrapper {
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: black;
+  align-items: center;
 }
 
-.dot {
-  height: 8px;
-  width: 8px;
-  background-color: #007bff;
-  border-radius: 50px;
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #eef2ff;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.circle::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .label {
-  font-size: 14px;
-  font-weight: 600;
-  color: #222;
-  padding-top: 30px;
+  margin-top: 10px;
+  font-weight: 500;
 }
+
 
 /*pricing section*/
 
@@ -890,27 +907,101 @@ input[type="checkbox"] {
     align-items: center;
   }
 
-  .hero-right{
+  .hero-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
-  .why-front-title{
+  .why-front-title {
     margin-top: 300px;
   }
 
-  .hero-section{
+  .why-front-title p{
+    line-height: 30px;
+  }
+
+  .hero-section {
     width: 100%;
   }
 
-  .google { top: 150%; left: 10%;}
-  .paypal{ top: 180%; left: 10%;}
-  .google-ads { top: 220%;}
-  .atlassian { top: 155%; left: 40%;}
-  .weave { top: 180%; left: 70%;}
-  .asana { top: 150%; left: 92%;}
-  .calender { top: 230%; left: 90%;}
-}
+  .google {
+    top: 130%;
+    left: 10%;
+  }
+  .paypal {
+    top: 160%;
+    left: 10%;
+  }
+  .google-ads {
+    top: 200%;
+    left: 40%;
+  }
+  .atlassian {
+    top: 135%;
+    left: 40%;
+  }
+  .weave {
+    top: 165%;
+    left: 70%;
+  }
+  .asana {
+    top: 130%;
+    left: 82%;
+  }
+  .calender {
+    top: 210%;
+    left: 80%;
+  }
 
+  .hire-us-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hire-us-right {
+    background-color: #20335b;
+  }
+
+  .front-logo {
+    position: absolute;
+  }
+
+  .nav-bar-button {
+    position: absolute;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right-column p {
+    width: 250px;
+  }
+
+  .hire-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stepper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stepper::before{
+    display: none;
+  }
+
+  .step{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+}
