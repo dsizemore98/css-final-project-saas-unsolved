@@ -1,0 +1,210 @@
+@media screen and (max-width: 1023px) {
+    .footer {
+      display: flex;
+      justify-content: end;
+    }
+  
+    .hire-us-section {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .hire-us-left {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .plan-features-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .right-column {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+@media screen and (max-width: 767px) {
+    .footer-column {
+      display: flex;
+      align-items: center;
+    }
+  
+    .footer-contact-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-top-wording{
+      padding: 10px;
+    }
+  
+    .form-group-one {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-group-one input {
+      width: 270px;
+      border: 1px solid #e6e8f2;
+    }
+  
+    .form-group-two {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding-left: 10px;
+    }
+  
+    .form-group-two input {
+      width: 270px;
+      border: 1px solid #e6e8f2;
+    }
+  
+    .form-group-three {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-group-three select {
+      width: 270px;
+      border: 1px solid #e6e8f2;
+    }
+
+    .form-group-five{
+      width: 100%;
+    }
+  
+    .text-area {
+      width: 270px;
+    }
+  
+    .privacy-two {
+      visibility: hidden;
+    }
+  
+    .bullet-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-right {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .why-front-title {
+      margin-top: 400px;
+    }
+  
+    .why-front-title p{
+      line-height: 30px;
+    }
+  
+    .hero-section {
+      width: 100%;
+    }
+  
+    .google {
+      top: 60%;
+      left: 5%;
+    }
+    .paypal {
+      top: 70%;
+      left: 15%;
+    }
+    .google-ads {
+      top: 90%;
+      left: 32%;
+    }
+    .atlassian {
+      top: 60%;
+      left: 40%;
+    }
+    .weave {
+      top: 80%;
+      left: 50%;
+    }
+    .asana {
+      top: 90%;
+      left: 72%;
+    }
+    .calender {
+      top: 70%;
+      left: 72%;
+    }
+  
+    .hire-top{
+      padding: 0;
+    }
+  
+    .hire-bottom{
+      margin-left: 0;
+    }
+  
+    .hire-us-left {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .hire-us-right {
+      background-color: #20335b;
+      max-width: 90%;
+      padding: 0;
+    }
+  
+    .front-logo {
+      position: absolute;
+    }
+  
+    .nav-bar-button {
+      position: absolute;
+    }
+
+    .nav-bar i{
+      visibility: visible;
+    }
+  
+    .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .right-column p {
+      width: 250px;
+    }
+  
+    .hire-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .stepper{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .stepper::before{
+      display: none;
+    }
+  
+    .step{
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+    }
+  }
+  
